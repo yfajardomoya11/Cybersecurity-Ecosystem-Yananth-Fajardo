@@ -45,19 +45,25 @@ Event-driven security engine for log analysis and threat monitoring.
 Simulate a real-world Blue Team / SOC environment using modular cybersecurity tools.
 
 
-## 🧠 SOC Architecture Diagram
+## 🧠 Mini SIEM Architecture
 
-```mermaid
+```mermaid id="siem123"
 flowchart LR
 
-A[Network Security Tool - Device Management & Backups]
-B[Sentinel Watch - Intrusion Detection System]
-C[Guardian Engine - Log Analysis & Threat Monitoring]
-D[Security Insights / Alerts]
+A[Network Devices] --> B[Network Security Tool]
+B --> C[Log Collection]
 
-A --> B
-B --> C
-C --> D
+C --> D[Sentinel Watch IDS]
+D --> E[Threat Detection Engine]
+
+E --> F[Guardian Engine]
+F --> G[Event Correlation]
+
+G --> H[Alerts & Reports]
+G --> I[Security Dashboard]
+
+H --> J[Admin Response]
 ```
+
 
 
