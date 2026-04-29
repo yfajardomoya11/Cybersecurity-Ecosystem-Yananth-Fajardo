@@ -1,47 +1,52 @@
-# 🛡️ Cybersecurity Ecosystem — Yananth Fajardo
+# 🛡️ Cybersecurity Ecosystem | Integrated SOC Platform
+### Developed by **Yananth Fajardo Moya** — `@yfajardomoya11`
 
-> **Framework modular diseñado para la simulación de operaciones SOC (Security Operations Center), integrando automatización de red, detección activa de intrusiones y análisis de eventos de seguridad.**
+> **Un ecosistema de seguridad modular de alto rendimiento diseñado para la automatización de infraestructura, detección proactiva de intrusiones y análisis de inteligencia de amenazas.**
 
 ![Python](https://img.shields.io/badge/Python-3.9+-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![MIT License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
-![SOC Focus](https://img.shields.io/badge/Focus-Blue%20Team%20%7C%20SOC-blue?style=for-the-badge)
-![Security+](https://img.shields.io/badge/Prep-CompTIA%20Security%2B-red?style=for-the-badge)
+![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
+![Security Focus](https://img.shields.io/badge/Focus-Cybersecurity%20%7C%20Blue%20Team-blue?style=for-the-badge)
+![Network Automation](https://img.shields.io/badge/Network-Automation-orange?style=for-the-badge)
 
 ---
 
-## ⚠️ Professional Disclaimer / Descargo de Responsabilidad
-
-> [!IMPORTANT]
-> **Uso Ético y Educativo:** Este ecosistema ha sido desarrollado exclusivamente con fines educativos, de investigación y para la simulación de entornos controlados (Laboratorios Blue Team). 
-> 
-> * **No para Producción:** No se recomienda el uso de estas herramientas en infraestructuras críticas sin una auditoría de seguridad previa.
-> * **Responsabilidad:** El autor no se hace responsable del mal uso de estas herramientas. El acceso no autorizado a sistemas informáticos es ilegal y constituye un delito en la mayoría de las legislaciones internacionales.
-> * **Ética Hacker:** "With great power comes great responsibility." Utiliza este conocimiento siempre bajo el marco de la legalidad y la ética profesional.
+## ⚖️ Legal & Ethical Disclaimer
+> [!CAUTION]
+> **Aviso de Responsabilidad Profesional** > Este ecosistema ha sido íntegramente desarrollado por **Yananth Fajardo Moya** con fines estrictamente educativos y de investigación en ciberseguridad. 
+>
+> 1. **Uso Ético:** Las herramientas aquí contenidas deben ser utilizadas únicamente en entornos controlados, laboratorios de seguridad o bajo autorización explícita del propietario de la red (Pentesting Ético).
+> 2. **Sin Garantías:** El autor no se responsabiliza por daños, interrupciones de servicio o uso ilícito de este software en infraestructuras de terceros. 
+> 3. **Legislación:** El uso de estas herramientas para actividades no autorizadas puede ser penalizado bajo las leyes de delitos informáticos locales e internacionales. 
+>
+> **La ciberseguridad es una responsabilidad. Úsala para proteger, no para comprometer.**
 
 ---
 
 ## 🧠 Arquitectura del Sistema (Mini SIEM)
 
-El ecosistema utiliza una arquitectura orientada a eventos para procesar datos desde la infraestructura hasta el analista.
+Esta arquitectura simula el flujo de datos de un **Security Operations Center (SOC)** real, optimizando la visibilidad del tráfico y la respuesta ante incidentes.
 
 ```mermaid
 graph TD
-    subgraph "Infraestructura & Gestión"
-    A[🌐 Network Security Tool] -->|Push Config| B(Dispositivos de Red)
-    B -->|Pull Backups| A
+    subgraph "Control & Management"
+    A[🌐 Network Security Tool] -->|Push Config| B(Network Devices)
+    B -->|Configuration State| A
     end
 
-    subgraph "Monitoreo & Detección"
-    C[🚨 Sentinel Watch IDS] -->|Sniffing / PCAP| B
-    C -->|Alertas de Tráfico| E{🛡️ Guardian Engine}
-    B -->|Syslog / SNMP| E
+    subgraph "Detection & Monitoring"
+    C[🚨 Sentinel Watch IDS] -->|Packet Inspection| B
+    C -->|Alert Stream| E{🛡️ Guardian Engine}
+    B -->|Log Aggregation| E
     end
 
-    subgraph "Capa de Inteligencia"
-    E -->|Correlación| F[Analista de Seguridad]
-    E -.->|Respuesta Automatizada| A
+    subgraph "Orchestration & Analysis"
+    E -->|Correlation| F[Security Analyst]
+    E -.->|Incident Response| A
     end
 
+    style E fill:#1a237e,stroke:#fff,stroke-width:2px,color:#fff
+    style A fill:#1b5e20,color:#fff
+    style C fill:#b71c1c,color:#fff
     style E fill:#1f425f,stroke:#333,stroke-width:2px,color:#fff
     style A fill:#2e7d32,color:#fff
     style C fill:#c62828,color:#fff
