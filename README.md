@@ -1,49 +1,82 @@
 # Sentinel Defense Unit 1.0
-## Integrated Cybersecurity Ecosystem
+CIBERSECURITY ECOSYSTEM BY YANANTH FAJARDO MOYA
 
 <img width="1536" height="1024" alt="sentinel defense unit" src="https://github.com/user-attachments/assets/1fdf1174-a727-44cc-9d90-0473b9fd7e2d" />
 
 
-**Sentinel Defense Unit 1.0** es un ecosistema integral de ciberseguridad diseñado para proporcionar una defensa en profundidad robusta y escalable. Este proyecto nace de la necesidad de centralizar la visibilidad y respuesta ante incidentes, integrando tres herramientas de desarrollo propio que cubren desde el análisis de tráfico hasta la correlación avanzada de eventos.
+# 🛡️ Sentinel Defense Unit v1.0
+### Enterprise-Grade Cybersecurity Ecosystem & Threat Intelligence
 
-Desarrollado bajo una estética **Blue Team**, este ecosistema busca no solo la eficiencia técnica en la protección de infraestructuras, sino también una identidad profesional sólida en el ámbito del monitoreo y la defensa digital.
+<p align="center">
+  <img src="Copilot_20260429_195528.jpg" alt="Sentinel Defense Unit Banner" width="100%">
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" alt="Maintained">
+  <img src="https://img.shields.io/badge/Role-Blue%20Team-blue" alt="Role">
+  <img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License">
+  <img src="https://img.shields.io/badge/Python-3.x-blue.svg" alt="Python">
+</p>
 
 ---
 
-## 🛡️ Herramientas Integradas
+## 📖 Descripción General
+**Sentinel Defense Unit 1.0** es un ecosistema de defensa digital diseñado para la detección, análisis y mitigación de amenazas en infraestructuras de red complejas. Este proyecto integra tres herramientas modulares creadas bajo la filosofía de "Defensa en Profundidad", permitiendo una visibilidad total desde la capa de transporte hasta la capa de aplicación.
 
-El ecosistema se articula a través de tres pilares fundamentales desarrollados para trabajar de forma sinérgica:
+Este sistema es el núcleo del proyecto **The Network-Guardian**, enfocado en la educación y el desarrollo de herramientas de seguridad de código abierto.
+
+---
+
+## 🛠️ Componentes del Ecosistema
 
 ### 1. 🔗 Network Security Tool
-*Analizador de Infraestructura y Red.*
-Es la base del ecosistema, encargada de la auditoría y el análisis de paquetes. Proporciona la visibilidad necesaria sobre el tráfico entrante y saliente para identificar vectores de ataque a nivel de red.
+*Auditoría de Infraestructura.*
+Herramienta especializada en el análisis de vulnerabilidades y escaneo de activos.
+- **Capacidades:** Escaneo de puertos, detección de servicios y análisis de debilidades en protocolos HFC y Fibra Óptica.
 
 ### 2. 👁️ IDS Sentinel Watch
-*Sistema de Detección de Intrusos (IDS).*
-Actúa como el vigilante persistente. Este módulo monitorea comportamientos anómalos y firmas de ataques conocidos en tiempo real, generando alertas críticas antes de que una brecha se materialice.
+*Sistema de Detección de Intrusos.*
+Motor de vigilancia en tiempo real que identifica patrones de tráfico sospechosos.
+- **Capacidades:** Detección de escaneos ARP, intentos de fuerza bruta y anomalías en el flujo de paquetes.
 
 ### 3. 🧠 SIEM Guardian Engine
-*Sentinel-Shield Integration.*
-El núcleo de inteligencia del ecosistema. Este SIEM centraliza los logs y eventos generados por las herramientas anteriores, permitiendo una correlación de datos avanzada y una visualización clara del estado de seguridad de la red.
+*Sentinel-Shield Core.*
+Plataforma de gestión de eventos que actúa como el "cerebro" del ecosistema.
+- **Capacidades:** Correlación de logs, generación de alertas críticas y dashboards de visualización de ataques.
 
 ---
 
-## 🛠️ Tecnologías y Frameworks
+## 🏗️ Arquitectura Técnica
+El ecosistema utiliza una arquitectura distribuida donde cada sensor alimenta al motor de inteligencia central:
 
-Este proyecto ha sido desarrollado siguiendo estándares de la industria y utilizando herramientas líderes en el sector:
-
-*   **Lenguajes:** Python (Scripts de automatización y defensa).
-*   **Networking:** Frameworks de seguridad y monitoreo de redes (Cisco-based logic).
-*   **Entorno:** Diseñado para despliegues en infraestructuras locales y entornos controlados de defensa.
+1.  **Ingesta de Datos:** Captura nativa a través de la *Network Security Tool*.
+2.  **Procesamiento:** Análisis heurístico mediante *IDS Sentinel Watch*.
+3.  **Inteligencia:** Correlación y respuesta en *Guardian Engine*.
 
 ---
 
-## 🚀 Arquitectura del Sistema
+## 🚀 Instalación Rápida
+```bash
+# Clonar el ecosistema completo
+git clone [https://github.com/yfajardomoya11/sentinel-defense-unit.git](https://github.com/yfajardomoya11/sentinel-defense-unit.git)
 
-```mermaid
-graph TD
-    A[Network Security Tool] -->|Flujo de Datos| B[IDS Sentinel Watch]
-    B -->|Alertas/Eventos| C[SIEM Guardian Engine]
-    C -->|Visualización/Respuesta| D[Analista de Seguridad]
+# Acceder al directorio
+cd sentinel-defense-unit
 
+# Instalar dependencias base
+pip install -r requirements.txt
 
+---
+
+## ⚠️ Descargo de Responsabilidad (Disclaimer)
+
+**SOLO PARA FINES EDUCATIVOS Y DE INVESTIGACIÓN.**
+
+El ecosistema **Sentinel Defense Unit 1.0** y sus componentes (*Network Security Tool*, *Sentinel Watch*, y *Guardian-Engine*) han sido creados exclusivamente con fines educativos y para el fortalecimiento de entornos de red controlados dentro del marco del proyecto **The Network-Guardian**.
+
+Como desarrollador (**Yananth Fajardo Moya**), no me hago responsable del mal uso de estas herramientas o de cualquier daño causado por su aplicación en sistemas sin la autorización explícita de los propietarios. El uso de estas herramientas para atacar infraestructuras sin permiso es ilegal y poco ético.
+
+**Al utilizar este software, usted acepta:**
+*   Utilizarlo únicamente en entornos de laboratorio o redes propias.
+*   Cumplir con las leyes locales e internacionales de ciberseguridad.
+*   Asumir total responsabilidad por las acciones realizadas con este código.
