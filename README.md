@@ -1,54 +1,48 @@
-# 🛡️ Cybersecurity Ecosystem | Integrated SOC Platform
-### Developed by **Yananth Fajardo Moya** — `@yfajardomoya11`
+# Sentinel Defense Unit 1.0
+## Integrated Cybersecurity Ecosystem
 
-> **Un ecosistema de seguridad modular de alto rendimiento diseñado para la automatización de infraestructura, detección proactiva de intrusiones y análisis de inteligencia de amenazas.**
+![Sentinel Defense Unit Banner](Copilot_20260429_195528.jpg)
 
-![Python](https://img.shields.io/badge/Python-3.9+-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
-![Security Focus](https://img.shields.io/badge/Focus-Cybersecurity%20%7C%20Blue%20Team-blue?style=for-the-badge)
-![Network Automation](https://img.shields.io/badge/Network-Automation-orange?style=for-the-badge)
+**Sentinel Defense Unit 1.0** es un ecosistema integral de ciberseguridad diseñado para proporcionar una defensa en profundidad robusta y escalable. Este proyecto nace de la necesidad de centralizar la visibilidad y respuesta ante incidentes, integrando tres herramientas de desarrollo propio que cubren desde el análisis de tráfico hasta la correlación avanzada de eventos.
 
----
-
-## ⚖️ Legal & Ethical Disclaimer
-> [!CAUTION]
-> **Aviso de Responsabilidad Profesional** > Este ecosistema ha sido íntegramente desarrollado por **Yananth Fajardo Moya** con fines estrictamente educativos y de investigación en ciberseguridad. 
->
-> 1. **Uso Ético:** Las herramientas aquí contenidas deben ser utilizadas únicamente en entornos controlados, laboratorios de seguridad o bajo autorización explícita del propietario de la red (Pentesting Ético).
-> 2. **Sin Garantías:** El autor no se responsabiliza por daños, interrupciones de servicio o uso ilícito de este software en infraestructuras de terceros. 
-> 3. **Legislación:** El uso de estas herramientas para actividades no autorizadas puede ser penalizado bajo las leyes de delitos informáticos locales e internacionales. 
->
-> **La ciberseguridad es una responsabilidad. Úsala para proteger, no para comprometer.**
+Desarrollado bajo una estética **Blue Team**, este ecosistema busca no solo la eficiencia técnica en la protección de infraestructuras, sino también una identidad profesional sólida en el ámbito del monitoreo y la defensa digital.
 
 ---
 
-## 🧠 Arquitectura del Sistema (Mini SIEM)
+## 🛡️ Herramientas Integradas
 
-Esta arquitectura simula el flujo de datos de un **Security Operations Center (SOC)** real, optimizando la visibilidad del tráfico y la respuesta ante incidentes.
+El ecosistema se articula a través de tres pilares fundamentales desarrollados para trabajar de forma sinérgica:
+
+### 1. 🔗 Network Security Tool
+*Analizador de Infraestructura y Red.*
+Es la base del ecosistema, encargada de la auditoría y el análisis de paquetes. Proporciona la visibilidad necesaria sobre el tráfico entrante y saliente para identificar vectores de ataque a nivel de red.
+
+### 2. 👁️ IDS Sentinel Watch
+*Sistema de Detección de Intrusos (IDS).*
+Actúa como el vigilante persistente. Este módulo monitorea comportamientos anómalos y firmas de ataques conocidos en tiempo real, generando alertas críticas antes de que una brecha se materialice.
+
+### 3. 🧠 SIEM Guardian Engine
+*Sentinel-Shield Integration.*
+El núcleo de inteligencia del ecosistema. Este SIEM centraliza los logs y eventos generados por las herramientas anteriores, permitiendo una correlación de datos avanzada y una visualización clara del estado de seguridad de la red.
+
+---
+
+## 🛠️ Tecnologías y Frameworks
+
+Este proyecto ha sido desarrollado siguiendo estándares de la industria y utilizando herramientas líderes en el sector:
+
+*   **Lenguajes:** Python (Scripts de automatización y defensa).
+*   **Networking:** Frameworks de seguridad y monitoreo de redes (Cisco-based logic).
+*   **Entorno:** Diseñado para despliegues en infraestructuras locales y entornos controlados de defensa.
+
+---
+
+## 🚀 Arquitectura del Sistema
 
 ```mermaid
 graph TD
-    subgraph "Control & Management"
-    A[🌐 Network Security Tool] -->|Push Config| B(Network Devices)
-    B -->|Configuration State| A
-    end
-
-    subgraph "Detection & Monitoring"
-    C[🚨 Sentinel Watch IDS] -->|Packet Inspection| B
-    C -->|Alert Stream| E{🛡️ Guardian Engine}
-    B -->|Log Aggregation| E
-    end
-
-    subgraph "Orchestration & Analysis"
-    E -->|Correlation| F[Security Analyst]
-    E -.->|Incident Response| A
-    end
-
-    style E fill:#1a237e,stroke:#fff,stroke-width:2px,color:#fff
-    style A fill:#1b5e20,color:#fff
-    style C fill:#b71c1c,color:#fff
-    style E fill:#1f425f,stroke:#333,stroke-width:2px,color:#fff
-    style A fill:#2e7d32,color:#fff
-    style C fill:#c62828,color:#fff
+    A[Network Security Tool] -->|Flujo de Datos| B[IDS Sentinel Watch]
+    B -->|Alertas/Eventos| C[SIEM Guardian Engine]
+    C -->|Visualización/Respuesta| D[Analista de Seguridad]
 
 
