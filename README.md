@@ -8,7 +8,8 @@ CIBERSECURITY ECOSYSTEM BY YANANTH FAJARDO MOYA
 ### Enterprise-Grade Cybersecurity Ecosystem & Threat Intelligence
 
 <p align="center">
-  <img src="Copilot_20260429_195528.jpg" alt="Sentinel Defense Unit Banner" width="100%">
+  <img src="<img width="1536" height="1024" alt="sentinel defense unit" src="https://github.com/user-attachments/assets/59c70b6c-8426-4218-8cb9-0f01d021f1c1" />
+" alt="Sentinel Defense Unit Banner" width="100%">
 </p>
 
 <p align="center">
